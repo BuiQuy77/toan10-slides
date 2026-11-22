@@ -11,182 +11,834 @@
     body { font-family: 'Plus Jakarta Sans', sans-serif; }
   </style>
 </head>
-<body class="bg-slate-900 text-slate-100 min-h-screen">
+<body class="bg-slate-950 text-slate-100 min-h-screen">
   <!-- Header -->
-  <header class="border-b border-slate-800 bg-slate-950/80 backdrop-blur sticky top-0 z-50">
-    <div class="max-w-6xl mx-auto px-4 py-4 flex flex-wrap items-center justify-between gap-4">
-      <div class="flex items-center gap-3">
-        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-teal-500 to-emerald-400 flex items-center justify-center text-slate-950 font-black text-xl shadow-lg shadow-teal-500/20">
+  <header class="border-b border-slate-800 bg-slate-950/90 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex flex-wrap items-center justify-between gap-4">
+      <div class="flex items-center gap-3.5">
+        <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-teal-500 to-emerald-400 flex items-center justify-center text-slate-950 font-black text-2xl shadow-lg shadow-teal-500/20">
           📐
         </div>
         <div>
-          <h1 class="text-lg font-extrabold text-white tracking-tight">MANIM SLIDES TOÁN 10</h1>
-          <p class="text-xs text-teal-400 font-semibold">Tác giả: Thầy Bùi Quý • Hoạt họa Toán học tương tác cao</p>
+          <h1 class="text-lg sm:text-xl font-extrabold text-white tracking-tight">HỆ THỐNG MANIM SLIDES TOÁN 10</h1>
+          <p class="text-xs text-teal-400 font-semibold">Bộ sách Kết nối tri thức với cuộc sống • Thầy Bùi Quý</p>
         </div>
       </div>
-      <div class="flex items-center gap-2">
-        <span class="px-3 py-1 bg-teal-950/80 border border-teal-500/30 text-teal-300 text-xs font-bold rounded-full">
-          ✨ 15 Bản Trình Chiếu Độc Lập
+      <div class="flex items-center gap-2.5">
+        <span class="px-3.5 py-1.5 bg-teal-950/80 border border-teal-500/40 text-teal-300 text-xs font-extrabold rounded-full shadow-inner">
+          ✨ 63 Bản Trình Chiếu Độc Lập
         </span>
+        <a href="https://buiquy-test.vercel.app/" target="_blank" class="px-3.5 py-1.5 bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-200 text-xs font-bold rounded-xl transition flex items-center gap-1.5">
+          <i class="fa-solid fa-arrow-up-right-from-square text-[11px]"></i> Cổng Học Tập
+        </a>
       </div>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <main class="max-w-6xl mx-auto px-4 py-8 space-y-8">
-    <div class="p-6 sm:p-8 rounded-3xl bg-gradient-to-br from-slate-800/90 via-slate-800/50 to-teal-950/30 border border-slate-700/80 shadow-2xl space-y-4">
+  <!-- Main Container -->
+  <main class="max-w-7xl mx-auto px-4 py-8 space-y-10">
+    <!-- Hero Banner -->
+    <div class="p-6 sm:p-8 rounded-3xl bg-gradient-to-br from-slate-900 via-slate-900/90 to-teal-950/40 border border-slate-800 shadow-2xl space-y-4">
       <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-500/10 border border-teal-500/20 text-teal-300 text-xs font-bold">
-        <i class="fa-solid fa-wand-magic-sparkles"></i> 3Blue1Brown Engine • Reveal.js
+        <i class="fa-solid fa-wand-magic-sparkles"></i> Động Cơ Manim Community • Reveal.js • Full HD 1080p60
       </div>
-      <h2 class="text-2xl sm:text-3xl font-black text-white">
-        Hệ Thống Trình Chiếu Trực Quan Hóa Toán Học THPT
+      <h2 class="text-2xl sm:text-3xl font-black text-white tracking-tight">
+        Hệ Thống Trình Chiếu Hoạt Họa Toán Học Tương Tác Cao
       </h2>
-      <p class="text-sm text-slate-300 leading-relaxed max-w-3xl">
-        Các bài trình chiếu dưới đây được xây dựng bằng công nghệ <strong>Manim Slides</strong>. Mỗi bài giảng tích hợp đầy đủ hoạt họa chuyển động mượt mà, hỗ trợ trình chiếu toàn màn hình cho Giáo viên đứng lớp và học sinh tự học với phím <kbd class="px-2 py-0.5 bg-slate-700 rounded text-xs text-white">Space</kbd> hoặc phím mũi tên <kbd class="px-2 py-0.5 bg-slate-700 rounded text-xs text-white">➡️</kbd> <kbd class="px-2 py-0.5 bg-slate-700 rounded text-xs text-white">⬅️</kbd>.
+      <p class="text-sm text-slate-300 leading-relaxed max-w-4xl">
+        Bộ bài giảng Manim Slides bao quát toàn bộ <strong>27 Bài học</strong> và <strong>9 Bài tập cuối chương</strong> thuộc chương trình Toán 10. Mỗi bài trình chiếu đều tuân thủ nghiêm ngặt 7 nguyên tắc sư phạm: công thức LaTeX chuẩn mực, xuất hiện từ từ theo nhịp giảng, phân tách đề bài và lời giải tương tác bằng phím Enter, tích hợp thanh công cụ nổi điều khiển và chế độ toàn màn hình cho Giáo viên.
       </p>
+      <div class="flex flex-wrap items-center gap-4 pt-2 text-xs text-slate-400">
+        <div class="flex items-center gap-1.5"><i class="fa-solid fa-keyboard text-teal-400"></i> Phím <kbd class="px-2 py-0.5 bg-slate-800 border border-slate-700 rounded text-slate-200 font-mono">Space</kbd> / <kbd class="px-2 py-0.5 bg-slate-800 border border-slate-700 rounded text-slate-200 font-mono">Enter</kbd>: Bước tiếp theo</div>
+        <div class="flex items-center gap-1.5"><i class="fa-solid fa-expand text-teal-400"></i> Phím <kbd class="px-2 py-0.5 bg-slate-800 border border-slate-700 rounded text-slate-200 font-mono">F</kbd>: Bật/Tắt Toàn màn hình</div>
+        <div class="flex items-center gap-1.5"><i class="fa-solid fa-sliders text-teal-400"></i> Thanh công cụ điều khiển nổi ở góc dưới</div>
+      </div>
     </div>
 
-    <!-- Danh sách bài giảng -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-
-      <!-- Bài 1 -->
-      <div class="p-5 rounded-2xl bg-slate-800/60 border border-slate-700/60 hover:border-teal-500/40 transition-all flex flex-col justify-between space-y-4">
-        <div class="space-y-1.5">
-          <span class="text-[11px] font-bold text-teal-400 uppercase tracking-wider">Chương I • Bài 1</span>
-          <h3 class="text-base font-bold text-white">Mệnh Đề Toán Học</h3>
-          <p class="text-xs text-slate-400">Khái niệm mệnh đề, mệnh đề chứa biến, phủ định, kéo theo và tương đương.</p>
+    <!-- Chapter Sections -->
+    <div class="space-y-12">
+      
+    <section class="space-y-4">
+      <div class="flex items-center gap-3 pb-2 border-b border-slate-800">
+        <div class="w-8 h-8 rounded-lg bg-teal-500/20 text-teal-400 font-extrabold flex items-center justify-center text-sm border border-teal-500/30">
+          1
         </div>
-        <div class="grid grid-cols-2 gap-2 pt-2 border-t border-slate-700/50">
-          <a href="Bai01_MenhDe_Slide.html" target="_blank" class="px-3 py-2 rounded-xl bg-teal-600 hover:bg-teal-500 text-white text-xs font-bold text-center transition flex items-center justify-center gap-1.5">
-            <i class="fa-solid fa-play text-[10px]"></i> Lý Thuyết
-          </a>
-          <a href="Bai01_BaiTap_Slide.html" target="_blank" class="px-3 py-2 rounded-xl bg-slate-700 hover:bg-slate-600 text-slate-200 text-xs font-bold text-center transition flex items-center justify-center gap-1.5">
-            <i class="fa-solid fa-pen text-[10px]"></i> Bài Tập
-          </a>
-        </div>
+        <h2 class="text-lg sm:text-xl font-black text-white tracking-tight">CHƯƠNG I: MỆNH ĐỀ VÀ TẬP HỢP</h2>
       </div>
-
-      <!-- Bài 2 -->
-      <div class="p-5 rounded-2xl bg-slate-800/60 border border-slate-700/60 hover:border-teal-500/40 transition-all flex flex-col justify-between space-y-4">
-        <div class="space-y-1.5">
-          <span class="text-[11px] font-bold text-teal-400 uppercase tracking-wider">Chương I • Bài 2</span>
-          <h3 class="text-base font-bold text-white">Tập Hợp & Các Phép Toán</h3>
-          <p class="text-xs text-slate-400">Giao, hợp, hiệu, phần bù và biểu đồ Ven trực quan chuyển động.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        
+        <div class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-teal-500/50 transition-all flex flex-col justify-between space-y-4 shadow-lg hover:shadow-teal-500/10">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[11px] font-bold text-teal-400 uppercase tracking-wider">BÀI 1</span>
+              <span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-teal-950 text-teal-300 border border-teal-800/60">Toán 10</span>
+            </div>
+            <h3 class="text-base font-extrabold text-white leading-snug">Mệnh đề</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">Khái niệm mệnh đề, mệnh đề phủ định, kéo theo, tương đương, ký hiệu với mọi và tồn tại.</p>
+          </div>
+          <div class="grid grid-cols-2 gap-2.5 pt-3 border-t border-slate-800">
+            <a href="Bai_1_lythuyet.html" target="_blank" class="px-3 py-2 rounded-xl bg-teal-600 hover:bg-teal-500 text-white text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm">
+              <i class="fa-solid fa-play text-[10px]"></i> Lý Thuyết
+            </a>
+            <a href="Bai_1_baitap.html" target="_blank" class="px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm border border-slate-700/60">
+              <i class="fa-solid fa-pen text-[10px]"></i> Bài Tập
+            </a>
+          </div>
         </div>
-        <div class="grid grid-cols-2 gap-2 pt-2 border-t border-slate-700/50">
-          <a href="Bai02_TapHop_Slide.html" target="_blank" class="px-3 py-2 rounded-xl bg-teal-600 hover:bg-teal-500 text-white text-xs font-bold text-center transition flex items-center justify-center gap-1.5">
-            <i class="fa-solid fa-play text-[10px]"></i> Lý Thuyết
-          </a>
-          <a href="Bai02_BaiTap_Slide.html" target="_blank" class="px-3 py-2 rounded-xl bg-slate-700 hover:bg-slate-600 text-slate-200 text-xs font-bold text-center transition flex items-center justify-center gap-1.5">
-            <i class="fa-solid fa-pen text-[10px]"></i> Bài Tập
-          </a>
+        
+        <div class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-teal-500/50 transition-all flex flex-col justify-between space-y-4 shadow-lg hover:shadow-teal-500/10">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[11px] font-bold text-teal-400 uppercase tracking-wider">BÀI 2</span>
+              <span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-teal-950 text-teal-300 border border-teal-800/60">Toán 10</span>
+            </div>
+            <h3 class="text-base font-extrabold text-white leading-snug">Tập hợp và các phép toán trên tập hợp</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">Khái niệm tập hợp, tập con, các phép toán giao, hợp, hiệu và phần bù.</p>
+          </div>
+          <div class="grid grid-cols-2 gap-2.5 pt-3 border-t border-slate-800">
+            <a href="Bai_2_lythuyet.html" target="_blank" class="px-3 py-2 rounded-xl bg-teal-600 hover:bg-teal-500 text-white text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm">
+              <i class="fa-solid fa-play text-[10px]"></i> Lý Thuyết
+            </a>
+            <a href="Bai_2_baitap.html" target="_blank" class="px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm border border-slate-700/60">
+              <i class="fa-solid fa-pen text-[10px]"></i> Bài Tập
+            </a>
+          </div>
         </div>
+        
+        
+    <div class="p-5 rounded-2xl bg-gradient-to-br from-amber-950/40 via-slate-900/90 to-slate-900/80 border border-amber-500/30 hover:border-amber-400/60 transition-all flex flex-col justify-between space-y-4 shadow-lg">
+      <div class="space-y-2">
+        <div class="flex items-center justify-between">
+          <span class="text-[11px] font-bold text-amber-400 uppercase tracking-wider">TỔNG KẾT & ÔN TẬP</span>
+          <span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-amber-950 text-amber-300 border border-amber-800/60">Chương 1</span>
+        </div>
+        <h3 class="text-base font-extrabold text-white leading-snug">Bài tập cuối chương I</h3>
+        <p class="text-xs text-slate-400 leading-relaxed">Hệ thống toàn bộ câu hỏi trắc nghiệm và bài tập tự luận tổng hợp cuối chương 1 (SGK Toán 10).</p>
       </div>
-
-      <!-- Bài 9 -->
-      <div class="p-5 rounded-2xl bg-slate-800/60 border border-slate-700/60 hover:border-teal-500/40 transition-all flex flex-col justify-between space-y-4">
-        <div class="space-y-1.5">
-          <span class="text-[11px] font-bold text-teal-400 uppercase tracking-wider">Chương IV • Bài 9</span>
-          <h3 class="text-base font-bold text-white">Tích Của Vectơ Với Một Số</h3>
-          <p class="text-xs text-slate-400">Định nghĩa, tính chất, điều kiện cùng phương và phân tích vectơ.</p>
-        </div>
-        <div class="grid grid-cols-2 gap-2 pt-2 border-t border-slate-700/50">
-          <a href="Bai09_TichVecto_Slide.html" target="_blank" class="px-3 py-2 rounded-xl bg-teal-600 hover:bg-teal-500 text-white text-xs font-bold text-center transition flex items-center justify-center gap-1.5">
-            <i class="fa-solid fa-play text-[10px]"></i> Lý Thuyết
-          </a>
-          <a href="Bai09_BaiTap_Slide.html" target="_blank" class="px-3 py-2 rounded-xl bg-slate-700 hover:bg-slate-600 text-slate-200 text-xs font-bold text-center transition flex items-center justify-center gap-1.5">
-            <i class="fa-solid fa-pen text-[10px]"></i> Bài Tập
-          </a>
-        </div>
+      <div class="pt-3 border-t border-slate-800">
+        <a href="Bai_tap_cuoi_chuong_1.html" target="_blank" class="w-full px-3 py-2.5 rounded-xl bg-gradient-to-r from-amber-600 to-amber-500 hover:from-amber-500 hover:to-amber-400 text-slate-950 font-black text-xs text-center transition flex items-center justify-center gap-2 shadow-md">
+          <i class="fa-solid fa-book-open text-xs"></i> Xem Toàn Bộ Lời Giải Ôn Tập
+        </a>
       </div>
-
-      <!-- Bài 10 -->
-      <div class="p-5 rounded-2xl bg-slate-800/60 border border-slate-700/60 hover:border-teal-500/40 transition-all flex flex-col justify-between space-y-4">
-        <div class="space-y-1.5">
-          <span class="text-[11px] font-bold text-teal-400 uppercase tracking-wider">Chương IV • Bài 10</span>
-          <h3 class="text-base font-bold text-white">Vectơ Trong Mặt Phẳng Tọa Độ</h3>
-          <p class="text-xs text-slate-400">Tọa độ vectơ, tọa độ điểm và các phép toán toạ độ trên mặt phẳng Oxy.</p>
-        </div>
-        <div class="grid grid-cols-2 gap-2 pt-2 border-t border-slate-700/50">
-          <a href="Bai10_VectoToaDo_Slide.html" target="_blank" class="px-3 py-2 rounded-xl bg-teal-600 hover:bg-teal-500 text-white text-xs font-bold text-center transition flex items-center justify-center gap-1.5">
-            <i class="fa-solid fa-play text-[10px]"></i> Lý Thuyết
-          </a>
-          <a href="Bai10_BaiTap_Slide.html" target="_blank" class="px-3 py-2 rounded-xl bg-slate-700 hover:bg-slate-600 text-slate-200 text-xs font-bold text-center transition flex items-center justify-center gap-1.5">
-            <i class="fa-solid fa-pen text-[10px]"></i> Bài Tập
-          </a>
-        </div>
+    </div>
+    
       </div>
-
-      <!-- Bài 11 -->
-      <div class="p-5 rounded-2xl bg-slate-800/60 border border-slate-700/60 hover:border-teal-500/40 transition-all flex flex-col justify-between space-y-4">
-        <div class="space-y-1.5">
-          <span class="text-[11px] font-bold text-teal-400 uppercase tracking-wider">Chương IV • Bài 11</span>
-          <h3 class="text-base font-bold text-white">Tích Vô Hướng Của Hai Vectơ</h3>
-          <p class="text-xs text-slate-400">Định nghĩa góc giữa hai vectơ, công thức tích vô hướng và ứng dụng hình học.</p>
+    </section>
+    
+    <section class="space-y-4">
+      <div class="flex items-center gap-3 pb-2 border-b border-slate-800">
+        <div class="w-8 h-8 rounded-lg bg-teal-500/20 text-teal-400 font-extrabold flex items-center justify-center text-sm border border-teal-500/30">
+          2
         </div>
-        <div class="grid grid-cols-2 gap-2 pt-2 border-t border-slate-700/50">
-          <a href="Bai11_TichVoHuong_Slide.html" target="_blank" class="px-3 py-2 rounded-xl bg-teal-600 hover:bg-teal-500 text-white text-xs font-bold text-center transition flex items-center justify-center gap-1.5">
-            <i class="fa-solid fa-play text-[10px]"></i> Lý Thuyết
-          </a>
-          <a href="Bai11_BaiTap_Slide.html" target="_blank" class="px-3 py-2 rounded-xl bg-slate-700 hover:bg-slate-600 text-slate-200 text-xs font-bold text-center transition flex items-center justify-center gap-1.5">
-            <i class="fa-solid fa-pen text-[10px]"></i> Bài Tập
-          </a>
-        </div>
+        <h2 class="text-lg sm:text-xl font-black text-white tracking-tight">CHƯƠNG II: BẤT PHƯƠNG TRÌNH VÀ HỆ BẤT PHƯƠNG TRÌNH BẬC NHẤT HAI ẨN</h2>
       </div>
-
-      <!-- Bài 12 -->
-      <div class="p-5 rounded-2xl bg-slate-800/60 border border-slate-700/60 hover:border-teal-500/40 transition-all flex flex-col justify-between space-y-4">
-        <div class="space-y-1.5">
-          <span class="text-[11px] font-bold text-teal-400 uppercase tracking-wider">Chương V • Bài 12</span>
-          <h3 class="text-base font-bold text-white">Số Gần Đúng & Sai Số</h3>
-          <p class="text-xs text-slate-400">Sai số tuyệt đối, sai số tương đối, quy tròn số và chữ số có nghĩa.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        
+        <div class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-teal-500/50 transition-all flex flex-col justify-between space-y-4 shadow-lg hover:shadow-teal-500/10">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[11px] font-bold text-teal-400 uppercase tracking-wider">BÀI 3</span>
+              <span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-teal-950 text-teal-300 border border-teal-800/60">Toán 10</span>
+            </div>
+            <h3 class="text-base font-extrabold text-white leading-snug">Bất phương trình bậc nhất hai ẩn</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">Khái niệm, biểu diễn miền nghiệm của bất phương trình bậc nhất hai ẩn trên mặt phẳng.</p>
+          </div>
+          <div class="grid grid-cols-2 gap-2.5 pt-3 border-t border-slate-800">
+            <a href="Bai_3_lythuyet.html" target="_blank" class="px-3 py-2 rounded-xl bg-teal-600 hover:bg-teal-500 text-white text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm">
+              <i class="fa-solid fa-play text-[10px]"></i> Lý Thuyết
+            </a>
+            <a href="Bai_3_baitap.html" target="_blank" class="px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm border border-slate-700/60">
+              <i class="fa-solid fa-pen text-[10px]"></i> Bài Tập
+            </a>
+          </div>
         </div>
-        <div class="grid grid-cols-2 gap-2 pt-2 border-t border-slate-700/50">
-          <a href="Bai12_SoGanDung_Slide.html" target="_blank" class="px-3 py-2 rounded-xl bg-teal-600 hover:bg-teal-500 text-white text-xs font-bold text-center transition flex items-center justify-center gap-1.5">
-            <i class="fa-solid fa-play text-[10px]"></i> Lý Thuyết
-          </a>
-          <a href="Bai12_BaiTap_Slide.html" target="_blank" class="px-3 py-2 rounded-xl bg-slate-700 hover:bg-slate-600 text-slate-200 text-xs font-bold text-center transition flex items-center justify-center gap-1.5">
-            <i class="fa-solid fa-pen text-[10px]"></i> Bài Tập
-          </a>
+        
+        <div class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-teal-500/50 transition-all flex flex-col justify-between space-y-4 shadow-lg hover:shadow-teal-500/10">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[11px] font-bold text-teal-400 uppercase tracking-wider">BÀI 4</span>
+              <span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-teal-950 text-teal-300 border border-teal-800/60">Toán 10</span>
+            </div>
+            <h3 class="text-base font-extrabold text-white leading-snug">Hệ bất phương trình bậc nhất hai ẩn</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">Biểu diễn miền nghiệm của hệ bất phương trình, bài toán tối ưu thực tế.</p>
+          </div>
+          <div class="grid grid-cols-2 gap-2.5 pt-3 border-t border-slate-800">
+            <a href="Bai_4_lythuyet.html" target="_blank" class="px-3 py-2 rounded-xl bg-teal-600 hover:bg-teal-500 text-white text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm">
+              <i class="fa-solid fa-play text-[10px]"></i> Lý Thuyết
+            </a>
+            <a href="Bai_4_baitap.html" target="_blank" class="px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm border border-slate-700/60">
+              <i class="fa-solid fa-pen text-[10px]"></i> Bài Tập
+            </a>
+          </div>
         </div>
+        
+        
+    <div class="p-5 rounded-2xl bg-gradient-to-br from-amber-950/40 via-slate-900/90 to-slate-900/80 border border-amber-500/30 hover:border-amber-400/60 transition-all flex flex-col justify-between space-y-4 shadow-lg">
+      <div class="space-y-2">
+        <div class="flex items-center justify-between">
+          <span class="text-[11px] font-bold text-amber-400 uppercase tracking-wider">TỔNG KẾT & ÔN TẬP</span>
+          <span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-amber-950 text-amber-300 border border-amber-800/60">Chương 2</span>
+        </div>
+        <h3 class="text-base font-extrabold text-white leading-snug">Bài tập cuối chương II</h3>
+        <p class="text-xs text-slate-400 leading-relaxed">Hệ thống toàn bộ câu hỏi trắc nghiệm và bài tập tự luận tổng hợp cuối chương 2 (SGK Toán 10).</p>
       </div>
-
-      <!-- Bài 13 -->
-      <div class="p-5 rounded-2xl bg-slate-800/60 border border-slate-700/60 hover:border-teal-500/40 transition-all flex flex-col justify-between space-y-4">
-        <div class="space-y-1.5">
-          <span class="text-[11px] font-bold text-teal-400 uppercase tracking-wider">Chương V • Bài 13</span>
-          <h3 class="text-base font-bold text-white">Đo Xu Thế Trung Tâm</h3>
-          <p class="text-xs text-slate-400">Số trung bình, trung vị, mốt và tứ phân vị cho mẫu số liệu không ghép nhóm.</p>
-        </div>
-        <div class="grid grid-cols-2 gap-2 pt-2 border-t border-slate-700/50">
-          <a href="Bai13_XuTheTrungTam_Slide.html" target="_blank" class="px-3 py-2 rounded-xl bg-teal-600 hover:bg-teal-500 text-white text-xs font-bold text-center transition flex items-center justify-center gap-1.5">
-            <i class="fa-solid fa-play text-[10px]"></i> Lý Thuyết
-          </a>
-          <a href="Bai13_BaiTap_Slide.html" target="_blank" class="px-3 py-2 rounded-xl bg-slate-700 hover:bg-slate-600 text-slate-200 text-xs font-bold text-center transition flex items-center justify-center gap-1.5">
-            <i class="fa-solid fa-pen text-[10px]"></i> Bài Tập
-          </a>
-        </div>
+      <div class="pt-3 border-t border-slate-800">
+        <a href="Bai_tap_cuoi_chuong_2.html" target="_blank" class="w-full px-3 py-2.5 rounded-xl bg-gradient-to-r from-amber-600 to-amber-500 hover:from-amber-500 hover:to-amber-400 text-slate-950 font-black text-xs text-center transition flex items-center justify-center gap-2 shadow-md">
+          <i class="fa-solid fa-book-open text-xs"></i> Xem Toàn Bộ Lời Giải Ôn Tập
+        </a>
       </div>
-
-      <!-- Ôn tập cuối chương IV -->
-      <div class="p-5 rounded-2xl bg-slate-800/60 border border-slate-700/60 hover:border-teal-500/40 transition-all flex flex-col justify-between space-y-4">
-        <div class="space-y-1.5">
-          <span class="text-[11px] font-bold text-amber-400 uppercase tracking-wider">Chương IV • Tổng Ôn</span>
-          <h3 class="text-base font-bold text-white">Bài Tập Cuối Chương IV</h3>
-          <p class="text-xs text-slate-400">Tổng hợp bài tập thực chiến về hệ thức lượng, vectơ và tích vô hướng.</p>
-        </div>
-        <div class="pt-2 border-t border-slate-700/50">
-          <a href="BaiTapCuoiChuong_IV_Slide.html" target="_blank" class="w-full px-3 py-2 rounded-xl bg-amber-600 hover:bg-amber-500 text-white text-xs font-bold text-center transition flex items-center justify-center gap-1.5">
-            <i class="fa-solid fa-graduation-cap text-xs"></i> Trình Chiếu Bài Tập Tổng Ôn
-          </a>
-        </div>
+    </div>
+    
       </div>
-
+    </section>
+    
+    <section class="space-y-4">
+      <div class="flex items-center gap-3 pb-2 border-b border-slate-800">
+        <div class="w-8 h-8 rounded-lg bg-teal-500/20 text-teal-400 font-extrabold flex items-center justify-center text-sm border border-teal-500/30">
+          3
+        </div>
+        <h2 class="text-lg sm:text-xl font-black text-white tracking-tight">CHƯƠNG III: HỆ THỨC LƯỢNG TRONG TAM GIÁC</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        
+        <div class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-teal-500/50 transition-all flex flex-col justify-between space-y-4 shadow-lg hover:shadow-teal-500/10">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[11px] font-bold text-teal-400 uppercase tracking-wider">BÀI 5</span>
+              <span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-teal-950 text-teal-300 border border-teal-800/60">Toán 10</span>
+            </div>
+            <h3 class="text-base font-extrabold text-white leading-snug">Giá trị lượng giác của một góc từ 0° đến 180°</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">Định nghĩa sin, cos, tan, cot trên nửa đường tròn đơn vị, mối quan hệ giữa các góc bù nhau.</p>
+          </div>
+          <div class="grid grid-cols-2 gap-2.5 pt-3 border-t border-slate-800">
+            <a href="Bai_5_lythuyet.html" target="_blank" class="px-3 py-2 rounded-xl bg-teal-600 hover:bg-teal-500 text-white text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm">
+              <i class="fa-solid fa-play text-[10px]"></i> Lý Thuyết
+            </a>
+            <a href="Bai_5_baitap.html" target="_blank" class="px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm border border-slate-700/60">
+              <i class="fa-solid fa-pen text-[10px]"></i> Bài Tập
+            </a>
+          </div>
+        </div>
+        
+        <div class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-teal-500/50 transition-all flex flex-col justify-between space-y-4 shadow-lg hover:shadow-teal-500/10">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[11px] font-bold text-teal-400 uppercase tracking-wider">BÀI 6</span>
+              <span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-teal-950 text-teal-300 border border-teal-800/60">Toán 10</span>
+            </div>
+            <h3 class="text-base font-extrabold text-white leading-snug">Hệ thức lượng trong tam giác</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">Định lí côsin, định lí sin, các công thức tính diện tích tam giác và giải tam giác.</p>
+          </div>
+          <div class="grid grid-cols-2 gap-2.5 pt-3 border-t border-slate-800">
+            <a href="Bai_6_lythuyet.html" target="_blank" class="px-3 py-2 rounded-xl bg-teal-600 hover:bg-teal-500 text-white text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm">
+              <i class="fa-solid fa-play text-[10px]"></i> Lý Thuyết
+            </a>
+            <a href="Bai_6_baitap.html" target="_blank" class="px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm border border-slate-700/60">
+              <i class="fa-solid fa-pen text-[10px]"></i> Bài Tập
+            </a>
+          </div>
+        </div>
+        
+        
+    <div class="p-5 rounded-2xl bg-gradient-to-br from-amber-950/40 via-slate-900/90 to-slate-900/80 border border-amber-500/30 hover:border-amber-400/60 transition-all flex flex-col justify-between space-y-4 shadow-lg">
+      <div class="space-y-2">
+        <div class="flex items-center justify-between">
+          <span class="text-[11px] font-bold text-amber-400 uppercase tracking-wider">TỔNG KẾT & ÔN TẬP</span>
+          <span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-amber-950 text-amber-300 border border-amber-800/60">Chương 3</span>
+        </div>
+        <h3 class="text-base font-extrabold text-white leading-snug">Bài tập cuối chương III</h3>
+        <p class="text-xs text-slate-400 leading-relaxed">Hệ thống toàn bộ câu hỏi trắc nghiệm và bài tập tự luận tổng hợp cuối chương 3 (SGK Toán 10).</p>
+      </div>
+      <div class="pt-3 border-t border-slate-800">
+        <a href="Bai_tap_cuoi_chuong_3.html" target="_blank" class="w-full px-3 py-2.5 rounded-xl bg-gradient-to-r from-amber-600 to-amber-500 hover:from-amber-500 hover:to-amber-400 text-slate-950 font-black text-xs text-center transition flex items-center justify-center gap-2 shadow-md">
+          <i class="fa-solid fa-book-open text-xs"></i> Xem Toàn Bộ Lời Giải Ôn Tập
+        </a>
+      </div>
+    </div>
+    
+      </div>
+    </section>
+    
+    <section class="space-y-4">
+      <div class="flex items-center gap-3 pb-2 border-b border-slate-800">
+        <div class="w-8 h-8 rounded-lg bg-teal-500/20 text-teal-400 font-extrabold flex items-center justify-center text-sm border border-teal-500/30">
+          4
+        </div>
+        <h2 class="text-lg sm:text-xl font-black text-white tracking-tight">CHƯƠNG IV: VECTƠ</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        
+        <div class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-teal-500/50 transition-all flex flex-col justify-between space-y-4 shadow-lg hover:shadow-teal-500/10">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[11px] font-bold text-teal-400 uppercase tracking-wider">BÀI 7</span>
+              <span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-teal-950 text-teal-300 border border-teal-800/60">Toán 10</span>
+            </div>
+            <h3 class="text-base font-extrabold text-white leading-snug">Các khái niệm mở đầu</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">Định nghĩa vectơ, độ dài, vectơ cùng phương, cùng hướng, hai vectơ bằng nhau, vectơ-không.</p>
+          </div>
+          <div class="grid grid-cols-2 gap-2.5 pt-3 border-t border-slate-800">
+            <a href="Bai_7_lythuyet.html" target="_blank" class="px-3 py-2 rounded-xl bg-teal-600 hover:bg-teal-500 text-white text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm">
+              <i class="fa-solid fa-play text-[10px]"></i> Lý Thuyết
+            </a>
+            <a href="Bai_7_baitap.html" target="_blank" class="px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm border border-slate-700/60">
+              <i class="fa-solid fa-pen text-[10px]"></i> Bài Tập
+            </a>
+          </div>
+        </div>
+        
+        <div class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-teal-500/50 transition-all flex flex-col justify-between space-y-4 shadow-lg hover:shadow-teal-500/10">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[11px] font-bold text-teal-400 uppercase tracking-wider">BÀI 8</span>
+              <span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-teal-950 text-teal-300 border border-teal-800/60">Toán 10</span>
+            </div>
+            <h3 class="text-base font-extrabold text-white leading-snug">Tổng và hiệu của hai vectơ</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">Quy tắc ba điểm, quy tắc hình bình hành, tính chất của phép cộng vectơ và hiệu hai vectơ.</p>
+          </div>
+          <div class="grid grid-cols-2 gap-2.5 pt-3 border-t border-slate-800">
+            <a href="Bai_8_lythuyet.html" target="_blank" class="px-3 py-2 rounded-xl bg-teal-600 hover:bg-teal-500 text-white text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm">
+              <i class="fa-solid fa-play text-[10px]"></i> Lý Thuyết
+            </a>
+            <a href="Bai_8_baitap.html" target="_blank" class="px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm border border-slate-700/60">
+              <i class="fa-solid fa-pen text-[10px]"></i> Bài Tập
+            </a>
+          </div>
+        </div>
+        
+        <div class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-teal-500/50 transition-all flex flex-col justify-between space-y-4 shadow-lg hover:shadow-teal-500/10">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[11px] font-bold text-teal-400 uppercase tracking-wider">BÀI 9</span>
+              <span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-teal-950 text-teal-300 border border-teal-800/60">Toán 10</span>
+            </div>
+            <h3 class="text-base font-extrabold text-white leading-snug">Tích của một vectơ với một số</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">Định nghĩa, tính chất, điều kiện để hai vectơ cùng phương, biểu thị một vectơ theo hai vectơ không cùng phương.</p>
+          </div>
+          <div class="grid grid-cols-2 gap-2.5 pt-3 border-t border-slate-800">
+            <a href="Bai_9_lythuyet.html" target="_blank" class="px-3 py-2 rounded-xl bg-teal-600 hover:bg-teal-500 text-white text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm">
+              <i class="fa-solid fa-play text-[10px]"></i> Lý Thuyết
+            </a>
+            <a href="Bai_9_baitap.html" target="_blank" class="px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm border border-slate-700/60">
+              <i class="fa-solid fa-pen text-[10px]"></i> Bài Tập
+            </a>
+          </div>
+        </div>
+        
+        <div class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-teal-500/50 transition-all flex flex-col justify-between space-y-4 shadow-lg hover:shadow-teal-500/10">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[11px] font-bold text-teal-400 uppercase tracking-wider">BÀI 10</span>
+              <span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-teal-950 text-teal-300 border border-teal-800/60">Toán 10</span>
+            </div>
+            <h3 class="text-base font-extrabold text-white leading-snug">Vectơ trong mặt phẳng tọa độ</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">Tọa độ của vectơ, tọa độ của một điểm, biểu thức tọa độ của các phép toán vectơ.</p>
+          </div>
+          <div class="grid grid-cols-2 gap-2.5 pt-3 border-t border-slate-800">
+            <a href="Bai_10_lythuyet.html" target="_blank" class="px-3 py-2 rounded-xl bg-teal-600 hover:bg-teal-500 text-white text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm">
+              <i class="fa-solid fa-play text-[10px]"></i> Lý Thuyết
+            </a>
+            <a href="Bai_10_baitap.html" target="_blank" class="px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm border border-slate-700/60">
+              <i class="fa-solid fa-pen text-[10px]"></i> Bài Tập
+            </a>
+          </div>
+        </div>
+        
+        <div class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-teal-500/50 transition-all flex flex-col justify-between space-y-4 shadow-lg hover:shadow-teal-500/10">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[11px] font-bold text-teal-400 uppercase tracking-wider">BÀI 11</span>
+              <span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-teal-950 text-teal-300 border border-teal-800/60">Toán 10</span>
+            </div>
+            <h3 class="text-base font-extrabold text-white leading-snug">Tích vô hướng của hai vectơ</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">Định nghĩa góc giữa hai vectơ, tích vô hướng, biểu thức tọa độ và ứng dụng tính độ dài, góc.</p>
+          </div>
+          <div class="grid grid-cols-2 gap-2.5 pt-3 border-t border-slate-800">
+            <a href="Bai_11_lythuyet.html" target="_blank" class="px-3 py-2 rounded-xl bg-teal-600 hover:bg-teal-500 text-white text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm">
+              <i class="fa-solid fa-play text-[10px]"></i> Lý Thuyết
+            </a>
+            <a href="Bai_11_baitap.html" target="_blank" class="px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm border border-slate-700/60">
+              <i class="fa-solid fa-pen text-[10px]"></i> Bài Tập
+            </a>
+          </div>
+        </div>
+        
+        
+    <div class="p-5 rounded-2xl bg-gradient-to-br from-amber-950/40 via-slate-900/90 to-slate-900/80 border border-amber-500/30 hover:border-amber-400/60 transition-all flex flex-col justify-between space-y-4 shadow-lg">
+      <div class="space-y-2">
+        <div class="flex items-center justify-between">
+          <span class="text-[11px] font-bold text-amber-400 uppercase tracking-wider">TỔNG KẾT & ÔN TẬP</span>
+          <span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-amber-950 text-amber-300 border border-amber-800/60">Chương 4</span>
+        </div>
+        <h3 class="text-base font-extrabold text-white leading-snug">Bài tập cuối chương IV</h3>
+        <p class="text-xs text-slate-400 leading-relaxed">Hệ thống toàn bộ câu hỏi trắc nghiệm và bài tập tự luận tổng hợp cuối chương 4 (SGK Toán 10).</p>
+      </div>
+      <div class="pt-3 border-t border-slate-800">
+        <a href="Bai_tap_cuoi_chuong_4.html" target="_blank" class="w-full px-3 py-2.5 rounded-xl bg-gradient-to-r from-amber-600 to-amber-500 hover:from-amber-500 hover:to-amber-400 text-slate-950 font-black text-xs text-center transition flex items-center justify-center gap-2 shadow-md">
+          <i class="fa-solid fa-book-open text-xs"></i> Xem Toàn Bộ Lời Giải Ôn Tập
+        </a>
+      </div>
+    </div>
+    
+      </div>
+    </section>
+    
+    <section class="space-y-4">
+      <div class="flex items-center gap-3 pb-2 border-b border-slate-800">
+        <div class="w-8 h-8 rounded-lg bg-teal-500/20 text-teal-400 font-extrabold flex items-center justify-center text-sm border border-teal-500/30">
+          5
+        </div>
+        <h2 class="text-lg sm:text-xl font-black text-white tracking-tight">CHƯƠNG V: CÁC SỐ ĐẶC TRƯNG ĐO XU THẾ TRUNG TÂM VÀ ĐO ĐỘ PHÂN TÁN</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        
+        <div class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-teal-500/50 transition-all flex flex-col justify-between space-y-4 shadow-lg hover:shadow-teal-500/10">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[11px] font-bold text-teal-400 uppercase tracking-wider">BÀI 12</span>
+              <span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-teal-950 text-teal-300 border border-teal-800/60">Toán 10</span>
+            </div>
+            <h3 class="text-base font-extrabold text-white leading-snug">Số gần đúng và sai số</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">Số gần đúng, sai số tuyệt đối, sai số tương đối, số quy tròn và độ chính xác của số gần đúng.</p>
+          </div>
+          <div class="grid grid-cols-2 gap-2.5 pt-3 border-t border-slate-800">
+            <a href="Bai_12_lythuyet.html" target="_blank" class="px-3 py-2 rounded-xl bg-teal-600 hover:bg-teal-500 text-white text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm">
+              <i class="fa-solid fa-play text-[10px]"></i> Lý Thuyết
+            </a>
+            <a href="Bai_12_baitap.html" target="_blank" class="px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm border border-slate-700/60">
+              <i class="fa-solid fa-pen text-[10px]"></i> Bài Tập
+            </a>
+          </div>
+        </div>
+        
+        <div class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-teal-500/50 transition-all flex flex-col justify-between space-y-4 shadow-lg hover:shadow-teal-500/10">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[11px] font-bold text-teal-400 uppercase tracking-wider">BÀI 13</span>
+              <span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-teal-950 text-teal-300 border border-teal-800/60">Toán 10</span>
+            </div>
+            <h3 class="text-base font-extrabold text-white leading-snug">Các số đặc trưng đo xu thế trung tâm</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">Số trung bình, trung vị, tứ phân vị, mốt của mẫu số liệu không ghép nhóm.</p>
+          </div>
+          <div class="grid grid-cols-2 gap-2.5 pt-3 border-t border-slate-800">
+            <a href="Bai_13_lythuyet.html" target="_blank" class="px-3 py-2 rounded-xl bg-teal-600 hover:bg-teal-500 text-white text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm">
+              <i class="fa-solid fa-play text-[10px]"></i> Lý Thuyết
+            </a>
+            <a href="Bai_13_baitap.html" target="_blank" class="px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm border border-slate-700/60">
+              <i class="fa-solid fa-pen text-[10px]"></i> Bài Tập
+            </a>
+          </div>
+        </div>
+        
+        <div class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-teal-500/50 transition-all flex flex-col justify-between space-y-4 shadow-lg hover:shadow-teal-500/10">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[11px] font-bold text-teal-400 uppercase tracking-wider">BÀI 14</span>
+              <span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-teal-950 text-teal-300 border border-teal-800/60">Toán 10</span>
+            </div>
+            <h3 class="text-base font-extrabold text-white leading-snug">Các số đặc trưng đo độ phân tán</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">Khoảng biến thiên, khoảng tứ phân vị, phương sai và độ lệch chuẩn của mẫu số liệu.</p>
+          </div>
+          <div class="grid grid-cols-2 gap-2.5 pt-3 border-t border-slate-800">
+            <a href="Bai_14_lythuyet.html" target="_blank" class="px-3 py-2 rounded-xl bg-teal-600 hover:bg-teal-500 text-white text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm">
+              <i class="fa-solid fa-play text-[10px]"></i> Lý Thuyết
+            </a>
+            <a href="Bai_14_baitap.html" target="_blank" class="px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm border border-slate-700/60">
+              <i class="fa-solid fa-pen text-[10px]"></i> Bài Tập
+            </a>
+          </div>
+        </div>
+        
+        
+    <div class="p-5 rounded-2xl bg-gradient-to-br from-amber-950/40 via-slate-900/90 to-slate-900/80 border border-amber-500/30 hover:border-amber-400/60 transition-all flex flex-col justify-between space-y-4 shadow-lg">
+      <div class="space-y-2">
+        <div class="flex items-center justify-between">
+          <span class="text-[11px] font-bold text-amber-400 uppercase tracking-wider">TỔNG KẾT & ÔN TẬP</span>
+          <span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-amber-950 text-amber-300 border border-amber-800/60">Chương 5</span>
+        </div>
+        <h3 class="text-base font-extrabold text-white leading-snug">Bài tập cuối chương V</h3>
+        <p class="text-xs text-slate-400 leading-relaxed">Hệ thống toàn bộ câu hỏi trắc nghiệm và bài tập tự luận tổng hợp cuối chương 5 (SGK Toán 10).</p>
+      </div>
+      <div class="pt-3 border-t border-slate-800">
+        <a href="Bai_tap_cuoi_chuong_5.html" target="_blank" class="w-full px-3 py-2.5 rounded-xl bg-gradient-to-r from-amber-600 to-amber-500 hover:from-amber-500 hover:to-amber-400 text-slate-950 font-black text-xs text-center transition flex items-center justify-center gap-2 shadow-md">
+          <i class="fa-solid fa-book-open text-xs"></i> Xem Toàn Bộ Lời Giải Ôn Tập
+        </a>
+      </div>
+    </div>
+    
+      </div>
+    </section>
+    
+    <section class="space-y-4">
+      <div class="flex items-center gap-3 pb-2 border-b border-slate-800">
+        <div class="w-8 h-8 rounded-lg bg-teal-500/20 text-teal-400 font-extrabold flex items-center justify-center text-sm border border-teal-500/30">
+          6
+        </div>
+        <h2 class="text-lg sm:text-xl font-black text-white tracking-tight">CHƯƠNG VI: HÀM SỐ, ĐỒ THỊ VÀ ỨNG DỤNG</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        
+        <div class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-teal-500/50 transition-all flex flex-col justify-between space-y-4 shadow-lg hover:shadow-teal-500/10">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[11px] font-bold text-teal-400 uppercase tracking-wider">BÀI 15</span>
+              <span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-teal-950 text-teal-300 border border-teal-800/60">Toán 10</span>
+            </div>
+            <h3 class="text-base font-extrabold text-white leading-snug">Hàm số</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">Khái niệm hàm số, tập xác định, tập giá trị, đồ thị và sự biến thiên của hàm số.</p>
+          </div>
+          <div class="grid grid-cols-2 gap-2.5 pt-3 border-t border-slate-800">
+            <a href="Bai_15_lythuyet.html" target="_blank" class="px-3 py-2 rounded-xl bg-teal-600 hover:bg-teal-500 text-white text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm">
+              <i class="fa-solid fa-play text-[10px]"></i> Lý Thuyết
+            </a>
+            <a href="Bai_15_baitap.html" target="_blank" class="px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm border border-slate-700/60">
+              <i class="fa-solid fa-pen text-[10px]"></i> Bài Tập
+            </a>
+          </div>
+        </div>
+        
+        <div class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-teal-500/50 transition-all flex flex-col justify-between space-y-4 shadow-lg hover:shadow-teal-500/10">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[11px] font-bold text-teal-400 uppercase tracking-wider">BÀI 16</span>
+              <span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-teal-950 text-teal-300 border border-teal-800/60">Toán 10</span>
+            </div>
+            <h3 class="text-base font-extrabold text-white leading-snug">Hàm số bậc hai</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">Đồ thị hàm số bậc hai (parabol), đỉnh, trục đối xứng, bảng biến thiên và ứng dụng thực tế.</p>
+          </div>
+          <div class="grid grid-cols-2 gap-2.5 pt-3 border-t border-slate-800">
+            <a href="Bai_16_lythuyet.html" target="_blank" class="px-3 py-2 rounded-xl bg-teal-600 hover:bg-teal-500 text-white text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm">
+              <i class="fa-solid fa-play text-[10px]"></i> Lý Thuyết
+            </a>
+            <a href="Bai_16_baitap.html" target="_blank" class="px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm border border-slate-700/60">
+              <i class="fa-solid fa-pen text-[10px]"></i> Bài Tập
+            </a>
+          </div>
+        </div>
+        
+        <div class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-teal-500/50 transition-all flex flex-col justify-between space-y-4 shadow-lg hover:shadow-teal-500/10">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[11px] font-bold text-teal-400 uppercase tracking-wider">BÀI 17</span>
+              <span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-teal-950 text-teal-300 border border-teal-800/60">Toán 10</span>
+            </div>
+            <h3 class="text-base font-extrabold text-white leading-snug">Dấu của tam thức bậc hai</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">Định lí về dấu của tam thức bậc hai, giải bất phương trình bậc hai một ẩn.</p>
+          </div>
+          <div class="grid grid-cols-2 gap-2.5 pt-3 border-t border-slate-800">
+            <a href="Bai_17_lythuyet.html" target="_blank" class="px-3 py-2 rounded-xl bg-teal-600 hover:bg-teal-500 text-white text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm">
+              <i class="fa-solid fa-play text-[10px]"></i> Lý Thuyết
+            </a>
+            <a href="Bai_17_baitap.html" target="_blank" class="px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm border border-slate-700/60">
+              <i class="fa-solid fa-pen text-[10px]"></i> Bài Tập
+            </a>
+          </div>
+        </div>
+        
+        <div class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-teal-500/50 transition-all flex flex-col justify-between space-y-4 shadow-lg hover:shadow-teal-500/10">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[11px] font-bold text-teal-400 uppercase tracking-wider">BÀI 18</span>
+              <span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-teal-950 text-teal-300 border border-teal-800/60">Toán 10</span>
+            </div>
+            <h3 class="text-base font-extrabold text-white leading-snug">Phương trình quy về phương trình bậc hai</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">Giải phương trình chứa căn bậc hai dạng căn A = căn B và căn A = B.</p>
+          </div>
+          <div class="grid grid-cols-2 gap-2.5 pt-3 border-t border-slate-800">
+            <a href="Bai_18_lythuyet.html" target="_blank" class="px-3 py-2 rounded-xl bg-teal-600 hover:bg-teal-500 text-white text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm">
+              <i class="fa-solid fa-play text-[10px]"></i> Lý Thuyết
+            </a>
+            <a href="Bai_18_baitap.html" target="_blank" class="px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm border border-slate-700/60">
+              <i class="fa-solid fa-pen text-[10px]"></i> Bài Tập
+            </a>
+          </div>
+        </div>
+        
+        
+    <div class="p-5 rounded-2xl bg-gradient-to-br from-amber-950/40 via-slate-900/90 to-slate-900/80 border border-amber-500/30 hover:border-amber-400/60 transition-all flex flex-col justify-between space-y-4 shadow-lg">
+      <div class="space-y-2">
+        <div class="flex items-center justify-between">
+          <span class="text-[11px] font-bold text-amber-400 uppercase tracking-wider">TỔNG KẾT & ÔN TẬP</span>
+          <span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-amber-950 text-amber-300 border border-amber-800/60">Chương 6</span>
+        </div>
+        <h3 class="text-base font-extrabold text-white leading-snug">Bài tập cuối chương VI</h3>
+        <p class="text-xs text-slate-400 leading-relaxed">Hệ thống toàn bộ câu hỏi trắc nghiệm và bài tập tự luận tổng hợp cuối chương 6 (SGK Toán 10).</p>
+      </div>
+      <div class="pt-3 border-t border-slate-800">
+        <a href="Bai_tap_cuoi_chuong_6.html" target="_blank" class="w-full px-3 py-2.5 rounded-xl bg-gradient-to-r from-amber-600 to-amber-500 hover:from-amber-500 hover:to-amber-400 text-slate-950 font-black text-xs text-center transition flex items-center justify-center gap-2 shadow-md">
+          <i class="fa-solid fa-book-open text-xs"></i> Xem Toàn Bộ Lời Giải Ôn Tập
+        </a>
+      </div>
+    </div>
+    
+      </div>
+    </section>
+    
+    <section class="space-y-4">
+      <div class="flex items-center gap-3 pb-2 border-b border-slate-800">
+        <div class="w-8 h-8 rounded-lg bg-teal-500/20 text-teal-400 font-extrabold flex items-center justify-center text-sm border border-teal-500/30">
+          7
+        </div>
+        <h2 class="text-lg sm:text-xl font-black text-white tracking-tight">CHƯƠNG VII: PHƯƠNG PHÁP TỌA ĐỘ TRONG MẶT PHẲNG</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        
+        <div class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-teal-500/50 transition-all flex flex-col justify-between space-y-4 shadow-lg hover:shadow-teal-500/10">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[11px] font-bold text-teal-400 uppercase tracking-wider">BÀI 19</span>
+              <span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-teal-950 text-teal-300 border border-teal-800/60">Toán 10</span>
+            </div>
+            <h3 class="text-base font-extrabold text-white leading-snug">Phương trình đường thẳng</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">Vectơ chỉ phương, vectơ pháp tuyến, phương trình tham số và phương trình tổng quát của đường thẳng.</p>
+          </div>
+          <div class="grid grid-cols-2 gap-2.5 pt-3 border-t border-slate-800">
+            <a href="Bai_19_lythuyet.html" target="_blank" class="px-3 py-2 rounded-xl bg-teal-600 hover:bg-teal-500 text-white text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm">
+              <i class="fa-solid fa-play text-[10px]"></i> Lý Thuyết
+            </a>
+            <a href="Bai_19_baitap.html" target="_blank" class="px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm border border-slate-700/60">
+              <i class="fa-solid fa-pen text-[10px]"></i> Bài Tập
+            </a>
+          </div>
+        </div>
+        
+        <div class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-teal-500/50 transition-all flex flex-col justify-between space-y-4 shadow-lg hover:shadow-teal-500/10">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[11px] font-bold text-teal-400 uppercase tracking-wider">BÀI 20</span>
+              <span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-teal-950 text-teal-300 border border-teal-800/60">Toán 10</span>
+            </div>
+            <h3 class="text-base font-extrabold text-white leading-snug">Vị trí tương đối giữa hai đường thẳng. Góc và khoảng cách</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">Xét vị trí tương đối cắt nhau, song song, trùng nhau; góc giữa hai đường thẳng và khoảng cách từ điểm đến đường thẳng.</p>
+          </div>
+          <div class="grid grid-cols-2 gap-2.5 pt-3 border-t border-slate-800">
+            <a href="Bai_20_lythuyet.html" target="_blank" class="px-3 py-2 rounded-xl bg-teal-600 hover:bg-teal-500 text-white text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm">
+              <i class="fa-solid fa-play text-[10px]"></i> Lý Thuyết
+            </a>
+            <a href="Bai_20_baitap.html" target="_blank" class="px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm border border-slate-700/60">
+              <i class="fa-solid fa-pen text-[10px]"></i> Bài Tập
+            </a>
+          </div>
+        </div>
+        
+        <div class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-teal-500/50 transition-all flex flex-col justify-between space-y-4 shadow-lg hover:shadow-teal-500/10">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[11px] font-bold text-teal-400 uppercase tracking-wider">BÀI 21</span>
+              <span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-teal-950 text-teal-300 border border-teal-800/60">Toán 10</span>
+            </div>
+            <h3 class="text-base font-extrabold text-white leading-snug">Đường tròn trong mặt phẳng tọa độ</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">Phương trình đường tròn, xác định tâm và bán kính, phương trình tiếp tuyến của đường tròn.</p>
+          </div>
+          <div class="grid grid-cols-2 gap-2.5 pt-3 border-t border-slate-800">
+            <a href="Bai_21_lythuyet.html" target="_blank" class="px-3 py-2 rounded-xl bg-teal-600 hover:bg-teal-500 text-white text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm">
+              <i class="fa-solid fa-play text-[10px]"></i> Lý Thuyết
+            </a>
+            <a href="Bai_21_baitap.html" target="_blank" class="px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm border border-slate-700/60">
+              <i class="fa-solid fa-pen text-[10px]"></i> Bài Tập
+            </a>
+          </div>
+        </div>
+        
+        <div class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-teal-500/50 transition-all flex flex-col justify-between space-y-4 shadow-lg hover:shadow-teal-500/10">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[11px] font-bold text-teal-400 uppercase tracking-wider">BÀI 22</span>
+              <span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-teal-950 text-teal-300 border border-teal-800/60">Toán 10</span>
+            </div>
+            <h3 class="text-base font-extrabold text-white leading-snug">Ba đường conic</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">Khái niệm, phương trình chính tắc và các tính chất hình học của elip, hypebol, parabol.</p>
+          </div>
+          <div class="grid grid-cols-2 gap-2.5 pt-3 border-t border-slate-800">
+            <a href="Bai_22_lythuyet.html" target="_blank" class="px-3 py-2 rounded-xl bg-teal-600 hover:bg-teal-500 text-white text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm">
+              <i class="fa-solid fa-play text-[10px]"></i> Lý Thuyết
+            </a>
+            <a href="Bai_22_baitap.html" target="_blank" class="px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm border border-slate-700/60">
+              <i class="fa-solid fa-pen text-[10px]"></i> Bài Tập
+            </a>
+          </div>
+        </div>
+        
+        
+    <div class="p-5 rounded-2xl bg-gradient-to-br from-amber-950/40 via-slate-900/90 to-slate-900/80 border border-amber-500/30 hover:border-amber-400/60 transition-all flex flex-col justify-between space-y-4 shadow-lg">
+      <div class="space-y-2">
+        <div class="flex items-center justify-between">
+          <span class="text-[11px] font-bold text-amber-400 uppercase tracking-wider">TỔNG KẾT & ÔN TẬP</span>
+          <span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-amber-950 text-amber-300 border border-amber-800/60">Chương 7</span>
+        </div>
+        <h3 class="text-base font-extrabold text-white leading-snug">Bài tập cuối chương VII</h3>
+        <p class="text-xs text-slate-400 leading-relaxed">Hệ thống toàn bộ câu hỏi trắc nghiệm và bài tập tự luận tổng hợp cuối chương 7 (SGK Toán 10).</p>
+      </div>
+      <div class="pt-3 border-t border-slate-800">
+        <a href="Bai_tap_cuoi_chuong_7.html" target="_blank" class="w-full px-3 py-2.5 rounded-xl bg-gradient-to-r from-amber-600 to-amber-500 hover:from-amber-500 hover:to-amber-400 text-slate-950 font-black text-xs text-center transition flex items-center justify-center gap-2 shadow-md">
+          <i class="fa-solid fa-book-open text-xs"></i> Xem Toàn Bộ Lời Giải Ôn Tập
+        </a>
+      </div>
+    </div>
+    
+      </div>
+    </section>
+    
+    <section class="space-y-4">
+      <div class="flex items-center gap-3 pb-2 border-b border-slate-800">
+        <div class="w-8 h-8 rounded-lg bg-teal-500/20 text-teal-400 font-extrabold flex items-center justify-center text-sm border border-teal-500/30">
+          8
+        </div>
+        <h2 class="text-lg sm:text-xl font-black text-white tracking-tight">CHƯƠNG VIII: ĐẠI SỐ TỔ HỢP</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        
+        <div class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-teal-500/50 transition-all flex flex-col justify-between space-y-4 shadow-lg hover:shadow-teal-500/10">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[11px] font-bold text-teal-400 uppercase tracking-wider">BÀI 23</span>
+              <span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-teal-950 text-teal-300 border border-teal-800/60">Toán 10</span>
+            </div>
+            <h3 class="text-base font-extrabold text-white leading-snug">Quy tắc đếm</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">Quy tắc cộng, quy tắc nhân, sơ đồ hình cây và ứng dụng trong các bài toán đếm thực tế.</p>
+          </div>
+          <div class="grid grid-cols-2 gap-2.5 pt-3 border-t border-slate-800">
+            <a href="Bai_23_lythuyet.html" target="_blank" class="px-3 py-2 rounded-xl bg-teal-600 hover:bg-teal-500 text-white text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm">
+              <i class="fa-solid fa-play text-[10px]"></i> Lý Thuyết
+            </a>
+            <a href="Bai_23_baitap.html" target="_blank" class="px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm border border-slate-700/60">
+              <i class="fa-solid fa-pen text-[10px]"></i> Bài Tập
+            </a>
+          </div>
+        </div>
+        
+        <div class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-teal-500/50 transition-all flex flex-col justify-between space-y-4 shadow-lg hover:shadow-teal-500/10">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[11px] font-bold text-teal-400 uppercase tracking-wider">BÀI 24</span>
+              <span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-teal-950 text-teal-300 border border-teal-800/60">Toán 10</span>
+            </div>
+            <h3 class="text-base font-extrabold text-white leading-snug">Hoán vị, chỉnh hợp và tổ hợp</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">Định nghĩa, công thức tính số hoán vị P_n, chỉnh hợp A_n^k, tổ hợp C_n^k và các tính chất cơ bản.</p>
+          </div>
+          <div class="grid grid-cols-2 gap-2.5 pt-3 border-t border-slate-800">
+            <a href="Bai_24_lythuyet.html" target="_blank" class="px-3 py-2 rounded-xl bg-teal-600 hover:bg-teal-500 text-white text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm">
+              <i class="fa-solid fa-play text-[10px]"></i> Lý Thuyết
+            </a>
+            <a href="Bai_24_baitap.html" target="_blank" class="px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm border border-slate-700/60">
+              <i class="fa-solid fa-pen text-[10px]"></i> Bài Tập
+            </a>
+          </div>
+        </div>
+        
+        <div class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-teal-500/50 transition-all flex flex-col justify-between space-y-4 shadow-lg hover:shadow-teal-500/10">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[11px] font-bold text-teal-400 uppercase tracking-wider">BÀI 25</span>
+              <span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-teal-950 text-teal-300 border border-teal-800/60">Toán 10</span>
+            </div>
+            <h3 class="text-base font-extrabold text-white leading-snug">Nhị thức Newton</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">Công thức khai triển nhị thức Newton với số mũ n = 4 và n = 5, ứng dụng tìm hệ số.</p>
+          </div>
+          <div class="grid grid-cols-2 gap-2.5 pt-3 border-t border-slate-800">
+            <a href="Bai_25_lythuyet.html" target="_blank" class="px-3 py-2 rounded-xl bg-teal-600 hover:bg-teal-500 text-white text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm">
+              <i class="fa-solid fa-play text-[10px]"></i> Lý Thuyết
+            </a>
+            <a href="Bai_25_baitap.html" target="_blank" class="px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm border border-slate-700/60">
+              <i class="fa-solid fa-pen text-[10px]"></i> Bài Tập
+            </a>
+          </div>
+        </div>
+        
+        
+    <div class="p-5 rounded-2xl bg-gradient-to-br from-amber-950/40 via-slate-900/90 to-slate-900/80 border border-amber-500/30 hover:border-amber-400/60 transition-all flex flex-col justify-between space-y-4 shadow-lg">
+      <div class="space-y-2">
+        <div class="flex items-center justify-between">
+          <span class="text-[11px] font-bold text-amber-400 uppercase tracking-wider">TỔNG KẾT & ÔN TẬP</span>
+          <span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-amber-950 text-amber-300 border border-amber-800/60">Chương 8</span>
+        </div>
+        <h3 class="text-base font-extrabold text-white leading-snug">Bài tập cuối chương VIII</h3>
+        <p class="text-xs text-slate-400 leading-relaxed">Hệ thống toàn bộ câu hỏi trắc nghiệm và bài tập tự luận tổng hợp cuối chương 8 (SGK Toán 10).</p>
+      </div>
+      <div class="pt-3 border-t border-slate-800">
+        <a href="Bai_tap_cuoi_chuong_8.html" target="_blank" class="w-full px-3 py-2.5 rounded-xl bg-gradient-to-r from-amber-600 to-amber-500 hover:from-amber-500 hover:to-amber-400 text-slate-950 font-black text-xs text-center transition flex items-center justify-center gap-2 shadow-md">
+          <i class="fa-solid fa-book-open text-xs"></i> Xem Toàn Bộ Lời Giải Ôn Tập
+        </a>
+      </div>
+    </div>
+    
+      </div>
+    </section>
+    
+    <section class="space-y-4">
+      <div class="flex items-center gap-3 pb-2 border-b border-slate-800">
+        <div class="w-8 h-8 rounded-lg bg-teal-500/20 text-teal-400 font-extrabold flex items-center justify-center text-sm border border-teal-500/30">
+          9
+        </div>
+        <h2 class="text-lg sm:text-xl font-black text-white tracking-tight">CHƯƠNG IX: TÍNH XÁC SUẤT THEO ĐỊNH NGHĨA CỔ ĐIỂN</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        
+        <div class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-teal-500/50 transition-all flex flex-col justify-between space-y-4 shadow-lg hover:shadow-teal-500/10">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[11px] font-bold text-teal-400 uppercase tracking-wider">BÀI 26</span>
+              <span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-teal-950 text-teal-300 border border-teal-800/60">Toán 10</span>
+            </div>
+            <h3 class="text-base font-extrabold text-white leading-snug">Biến cố và định nghĩa cổ điển của xác suất</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">Phép thử ngẫu nhiên, không gian mẫu, biến cố, biến cố đối, định nghĩa cổ điển của xác suất.</p>
+          </div>
+          <div class="grid grid-cols-2 gap-2.5 pt-3 border-t border-slate-800">
+            <a href="Bai_26_lythuyet.html" target="_blank" class="px-3 py-2 rounded-xl bg-teal-600 hover:bg-teal-500 text-white text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm">
+              <i class="fa-solid fa-play text-[10px]"></i> Lý Thuyết
+            </a>
+            <a href="Bai_26_baitap.html" target="_blank" class="px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm border border-slate-700/60">
+              <i class="fa-solid fa-pen text-[10px]"></i> Bài Tập
+            </a>
+          </div>
+        </div>
+        
+        <div class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-teal-500/50 transition-all flex flex-col justify-between space-y-4 shadow-lg hover:shadow-teal-500/10">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[11px] font-bold text-teal-400 uppercase tracking-wider">BÀI 27</span>
+              <span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-teal-950 text-teal-300 border border-teal-800/60">Toán 10</span>
+            </div>
+            <h3 class="text-base font-extrabold text-white leading-snug">Thực hành tính xác suất theo định nghĩa cổ điển</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">Sử dụng sơ đồ hình cây, quy tắc đếm, tổ hợp - chỉnh hợp và biến cố đối để tính xác suất.</p>
+          </div>
+          <div class="grid grid-cols-2 gap-2.5 pt-3 border-t border-slate-800">
+            <a href="Bai_27_lythuyet.html" target="_blank" class="px-3 py-2 rounded-xl bg-teal-600 hover:bg-teal-500 text-white text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm">
+              <i class="fa-solid fa-play text-[10px]"></i> Lý Thuyết
+            </a>
+            <a href="Bai_27_baitap.html" target="_blank" class="px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm border border-slate-700/60">
+              <i class="fa-solid fa-pen text-[10px]"></i> Bài Tập
+            </a>
+          </div>
+        </div>
+        
+        
+    <div class="p-5 rounded-2xl bg-gradient-to-br from-amber-950/40 via-slate-900/90 to-slate-900/80 border border-amber-500/30 hover:border-amber-400/60 transition-all flex flex-col justify-between space-y-4 shadow-lg">
+      <div class="space-y-2">
+        <div class="flex items-center justify-between">
+          <span class="text-[11px] font-bold text-amber-400 uppercase tracking-wider">TỔNG KẾT & ÔN TẬP</span>
+          <span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-amber-950 text-amber-300 border border-amber-800/60">Chương 9</span>
+        </div>
+        <h3 class="text-base font-extrabold text-white leading-snug">Bài tập cuối chương IX</h3>
+        <p class="text-xs text-slate-400 leading-relaxed">Hệ thống toàn bộ câu hỏi trắc nghiệm và bài tập tự luận tổng hợp cuối chương 9 (SGK Toán 10).</p>
+      </div>
+      <div class="pt-3 border-t border-slate-800">
+        <a href="Bai_tap_cuoi_chuong_9.html" target="_blank" class="w-full px-3 py-2.5 rounded-xl bg-gradient-to-r from-amber-600 to-amber-500 hover:from-amber-500 hover:to-amber-400 text-slate-950 font-black text-xs text-center transition flex items-center justify-center gap-2 shadow-md">
+          <i class="fa-solid fa-book-open text-xs"></i> Xem Toàn Bộ Lời Giải Ôn Tập
+        </a>
+      </div>
+    </div>
+    
+      </div>
+    </section>
+    
     </div>
   </main>
 
-  <footer class="mt-16 border-t border-slate-800 py-6 text-center text-xs text-slate-500">
-    Hệ thống Bài giảng Manim Slides © 2026 Thầy Bùi Quý • Tích hợp cùng Nền tảng Học Toán THPT MathMate
+  <!-- Footer -->
+  <footer class="border-t border-slate-800/80 bg-slate-950 py-8 mt-16 text-center text-xs text-slate-500 space-y-2">
+    <p class="font-bold text-slate-400">HỆ THỐNG BÀI GIẢNG ĐIỆN TỬ MANIM SLIDES TOÁN THPT • THẦY BÙI QUÝ</p>
+    <p>Phát triển bởi Trợ lý AI Antigravity - Google DeepMind • Xuất bản tại GitHub Pages & Vercel</p>
   </footer>
 </body>
 </html>
